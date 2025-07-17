@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+#convert {
+     display: flex;
+ flex-direction: column;
+  border: 1px solid black;
+  text-align: center;
+  gap: 10px;
+  padding: 20px;
+  margin-top: 10px;
+}
