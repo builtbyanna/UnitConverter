@@ -44,8 +44,10 @@
   text-align: center;
   gap: 10px;
   padding: 20px;
-  margin: 20px 20px;
-  height: 60px;
+  margin: 20px auto;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .convert h2 {
