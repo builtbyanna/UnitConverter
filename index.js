@@ -51,7 +51,7 @@ function convertMath(value, unit1, unit2, rate) {
   return `${value} ${unit1} = ${imperial} ${unit2} | ${value} ${unit2} = ${metric} ${unit1}`;
 }
 
-convertBtn.addEventListener("click", function () {
+function doConversion() {
   const value = Number(inputField.value); //uses variable: value to calculate with whatever user types in
 
   if (!value && value !== 0) {
@@ -63,4 +63,14 @@ convertBtn.addEventListener("click", function () {
   lengthConv.textContent = convertMath(value, "meter", "feet", 3.281);
   volumeConv.textContent = convertMath(value, "liters", "gallons", 0.264);
   massConv.textContent = convertMath(value, "kilograms", "pounds", 2.204);
-});
+};
+
+convertBtn.addEventListener("click", function(){
+  doConversion()
+})
+
+//how to run function when pressing ENTER
+inputField.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    doConversion()}
+})
